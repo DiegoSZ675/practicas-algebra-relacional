@@ -118,3 +118,13 @@ Este proyecto demuestra la traducción práctica de operadores matemáticos a SQ
 | **Agrupación** | $\gamma$ | Agrupar por atributo | `GROUP BY` |
 | **División** | $\div$ | Totalidad ("Para todo") | `NOT EXISTS (EXCEPT)` |
 | **Diferencia** | $-$ | Resta de conjuntos | `EXCEPT` o `NOT IN` |
+## 🛠 Tecnologías Utilizadas
+PostgreSQL 15: Motor de base de datos relacional.
+
+Python 3.9: Lenguaje para la interfaz de línea de comandos (CLI).
+
+Psycopg2: Adaptador de base de datos para Python.
+
+Docker Compose: Orquestación de servicios (App + DB).
+
+Git: Control de versiones.
