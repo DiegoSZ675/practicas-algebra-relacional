@@ -94,6 +94,7 @@ docker attach techstore_menu
 (Nota: Si el menú no aparece de inmediato, presiona ENTER una vez).
 
 4. Detener el sistema: Para apagar los contenedores y liberar recursos:
+docker-compose down
 ```
 ##🧠 Consultas Implementadas
 ```text
@@ -104,3 +105,14 @@ Categoría,Operadores / Conceptos,Descripción y Ejemplo
 3. Agregación,"SUM, AVG, GROUP BY","Cálculo de estadísticas y reportes.  Ej: Promedio de precios por marca, ventas por cliente."
 4. División (Desafío),÷ (Simulado),"Operaciones de totalidad.  Ej: ""Clientes que compraron TODOS los productos de X""."
 5. Lógica Predicados,"∀,∃",Consultas basadas en cuantificadores universales y existenciales.
+```
+## 🎓 Equivalencias Teóricas
+Este proyecto demuestra la traducción práctica de operadores matemáticos a SQL:
+Operador,Símbolo,Concepto,Implementación SQL
+Selección,σ,Filtrado de filas,WHERE condicion
+Proyección,π,Selección de columnas,"SELECT col1, col2"
+Reunión,⋈,Combinación de tablas,JOIN ... ON ...
+Agrupación,γ,Agrupar por atributo,GROUP BY
+División,÷,"Totalidad (""Para todo"")",NOT EXISTS (EXCEPT)
+Diferencia,−,Resta de conjuntos,EXCEPT o NOT IN
+
