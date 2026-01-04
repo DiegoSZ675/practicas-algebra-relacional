@@ -98,13 +98,18 @@ docker-compose down
 ```
 ##🧠 Consultas Implementadas
 ```text
-El sistema incluye 20 consultas clasificadas por complejidad. A continuación se detallan los tipos de operaciones cubiertas:
-Categoría,Operadores / Conceptos,Descripción y Ejemplo
-1. Operadores Básicos,"σ,π,∪,−,∩","Consultas de selección, proyección y conjuntos.  Ej: Listar productos de una marca o unión de catálogos."
-2. Reuniones (Joins),"⋈,\leftouterjoin,▹, Self-Join","Conexión de múltiples tablas.  Incluye: Natural Join, Left Outer Join y Anti-Join."
-3. Agregación,"SUM, AVG, GROUP BY","Cálculo de estadísticas y reportes.  Ej: Promedio de precios por marca, ventas por cliente."
-4. División (Desafío),÷ (Simulado),"Operaciones de totalidad.  Ej: ""Clientes que compraron TODOS los productos de X""."
-5. Lógica Predicados,"∀,∃",Consultas basadas en cuantificadores universales y existenciales.
+## 🎓 Equivalencias Teóricas
+
+Este proyecto demuestra la traducción práctica de operadores matemáticos a SQL:
+
+| Operador | Símbolo | Concepto | Implementación SQL |
+| :--- | :---: | :--- | :--- |
+| **Selección** | $\sigma$ | Filtrado de filas | `WHERE condicion` |
+| **Proyección** | $\pi$ | Selección de columnas | `SELECT col1, col2` |
+| **Reunión** | $\bowtie$ | Combinación de tablas | `JOIN ... ON ...` |
+| **Agrupación** | $\gamma$ | Agrupar por atributo | `GROUP BY` |
+| **División** | $\div$ | Totalidad ("Para todo") | `NOT EXISTS (EXCEPT)` |
+| **Diferencia** | $-$ | Resta de conjuntos | `EXCEPT` o `NOT IN` |
 ```
 ## 🎓 Equivalencias Teóricas
 El sistema incluye 20 consultas clasificadas por complejidad. A continuación se detallan los tipos de operaciones cubiertas:
