@@ -97,20 +97,16 @@ docker attach techstore_menu
 docker-compose down
 ```
 ##🧠 Consultas Implementadas
-```text
-## 🎓 Equivalencias Teóricas
+El sistema incluye 20 consultas clasificadas por complejidad. A continuación se detallan los tipos de operaciones cubiertas:
 
-Este proyecto demuestra la traducción práctica de operadores matemáticos a SQL:
+| Categoría | Operadores / Conceptos | Descripción y Ejemplo |
+| :--- | :--- | :--- |
+| **1. Operadores Básicos** | $\sigma, \pi, \cup, -, \cap$ | Consultas de selección, proyección y conjuntos. <br> *Ej: Listar productos de una marca o unión de catálogos.* |
+| **2. Reuniones (Joins)** | $\bowtie, \leftouterjoin, \triangleright$, Self-Join | Conexión de múltiples tablas. <br> *Incluye: Natural Join, Left Outer Join y Anti-Join.* |
+| **3. Agregación** | `SUM, AVG, GROUP BY` | Cálculo de estadísticas y reportes. <br> *Ej: Promedio de precios por marca, ventas por cliente.* |
+| **4. División (Desafío)** | $\div$ (Simulado) | Operaciones de totalidad. <br> *Ej: "Clientes que compraron TODOS los productos de X".* |
+| **5. Lógica Predicados** | $\forall, \exists$ | Consultas basadas en cuantificadores universales y existenciales. |
 
-| Operador | Símbolo | Concepto | Implementación SQL |
-| :--- | :---: | :--- | :--- |
-| **Selección** | $\sigma$ | Filtrado de filas | `WHERE condicion` |
-| **Proyección** | $\pi$ | Selección de columnas | `SELECT col1, col2` |
-| **Reunión** | $\bowtie$ | Combinación de tablas | `JOIN ... ON ...` |
-| **Agrupación** | $\gamma$ | Agrupar por atributo | `GROUP BY` |
-| **División** | $\div$ | Totalidad ("Para todo") | `NOT EXISTS (EXCEPT)` |
-| **Diferencia** | $-$ | Resta de conjuntos | `EXCEPT` o `NOT IN` |
-```
 ## 🎓 Equivalencias Teóricas
 Este proyecto demuestra la traducción práctica de operadores matemáticos a SQL:
 
