@@ -41,6 +41,7 @@ erDiagram
 
 ## 📂 Estructura del Repositorio
 
+```text
 proyecto-algebra-relacional/
 ├── docker-compose.yml      # Orquestador de servicios (App + DB)
 ├── README.md               # Documentación principal
@@ -50,3 +51,5 @@ proyecto-algebra-relacional/
 │   └── requirements.txt    # Dependencias (psycopg2, tabulate)
 └── db/
     └── init.sql            # Script SQL: Creación de tablas y datos semilla
+```
+
