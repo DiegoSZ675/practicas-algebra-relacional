@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  # Servicio de Base de Datos
+  db:
+    image: postgres:15-alpine
+    container_name: techstore_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: techstore
+    volumes:
+      # Esto ejecuta el script init.sql automáticamente al iniciar por primera vez
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+
+  # Servicio del Menú Interactivo (App)
+  app:
+    build: ./app
+    container_name: techstore_menu
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_NAME: techstore
+      DB_USER: admin
+      DB_PASS: password123
+    # Mantiene el contenedor vivo para que entres a usar el menú
+    tty: true
+    stdin_open: true 
+    command: python main.py
