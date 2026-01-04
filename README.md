@@ -78,7 +78,7 @@ proyecto-algebra-relacional/
     └── init.sql            # Script SQL: Creación de tablas y datos semilla
 ```
 ## 🚀 Instalación y Ejecución
-```text
+
 Este proyecto utiliza Docker y Docker Compose para un despliegue inmediato y aislado. No requiere instalar PostgreSQL ni Python localmente.
 
 Prerrequisitos
@@ -86,16 +86,21 @@ Tener instalado Docker Desktop (o Docker Engine + Compose).
 
 Pasos para ejecutar
 1. Clonar el repositorio:
-git clone <URL_DE_TU_REPOSITORIO>
-cd proyecto-algebra-relacional
+   git clone <URL_DE_TU_REPOSITORIO>
+    cd proyecto-algebra-relacional
+
 2. Construir y levantar los contenedores: Este comando descarga la imagen de Postgres, construye la aplicación Python e inicializa la base de datos automáticamente.
+   docker-compose up -d --build
+
 3. Ingresar al Menú Interactivo: Una vez que los contenedores estén corriendo, ejecuta:
-docker attach techstore_menu
-(Nota: Si el menú no aparece de inmediato, presiona ENTER una vez).
+   docker attach techstore_menu
+    (Nota: Si el menú no aparece de inmediato, presiona ENTER una vez).
 
 4. Detener el sistema: Para apagar los contenedores y liberar recursos:
-docker-compose down
-```
+   docker-compose down
+
+   
+
 ##🧠 Consultas Implementadas
 El sistema incluye 20 consultas clasificadas por complejidad. A continuación se detallan los tipos de operaciones cubiertas:
 
@@ -127,7 +132,7 @@ Este proyecto demuestra la traducción práctica de operadores matemáticos a SQ
 
 - Docker Compose: Orquestación de servicios (App + DB).
 
-Git: Control de versiones.
+- Git: Control de versiones.
 ## 🔧 Solución de Problemas Comunes
 1. Error: puerto 5432 ocupado Si tienes PostgreSQL instalado localmente en tu máquina, Docker fallará.
 
