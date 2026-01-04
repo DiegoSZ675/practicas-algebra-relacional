@@ -52,4 +52,20 @@ proyecto-algebra-relacional/
 └── db/
     └── init.sql            # Script SQL: Creación de tablas y datos semilla
 ```
+##Tabla de equivalencias teóricas
+
+```markdown
+## 🎓 Equivalencias Teóricas
+
+Este proyecto demuestra la traducción práctica de operadores matemáticos a SQL:
+
+| Operador | Símbolo | Concepto | Implementación SQL |
+| :--- | :---: | :--- | :--- |
+| **Selección** | $\sigma$ | Filtrado de filas | `WHERE condicion` |
+| **Proyección** | $\pi$ | Selección de columnas | `SELECT col1, col2` |
+| **Reunión** | $\bowtie$ | Combinación de tablas | `JOIN ... ON ...` |
+| **Agrupación** | $\gamma$ | Agrupar por atributo | `GROUP BY` |
+| **División** | $\div$ | Totalidad ("Para todo") | `NOT EXISTS (EXCEPT)` |
+| **Diferencia** | $-$ | Resta de conjuntos | `EXCEPT` o `NOT IN` |
+```
 
