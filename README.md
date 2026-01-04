@@ -52,7 +52,6 @@ proyecto-algebra-relacional/
 └── db/
     └── init.sql            # Script SQL: Creación de tablas y datos semilla
 ```
-##Tabla de equivalencias teóricas
 
 ```markdown
 ## 🎓 Equivalencias Teóricas
