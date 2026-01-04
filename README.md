@@ -35,15 +35,12 @@ erDiagram
         int quantity
     }
 
-
-----------------------------------------------------------------------------------------------------------------------------
-
+```
  Estructura del Proyecto
 
-```markdown
+
 ## 📂 Estructura del Repositorio
 
-```text
 proyecto-algebra-relacional/
 ├── docker-compose.yml      # Orquestador de servicios (App + DB)
 ├── README.md               # Documentación principal
