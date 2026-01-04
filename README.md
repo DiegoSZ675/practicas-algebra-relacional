@@ -119,12 +119,24 @@ Este proyecto demuestra la traducción práctica de operadores matemáticos a SQ
 | **División** | $\div$ | Totalidad ("Para todo") | `NOT EXISTS (EXCEPT)` |
 | **Diferencia** | $-$ | Resta de conjuntos | `EXCEPT` o `NOT IN` |
 ## 🛠 Tecnologías Utilizadas
-PostgreSQL 15: Motor de base de datos relacional.
+- PostgreSQL 15: Motor de base de datos relacional.
 
-Python 3.9: Lenguaje para la interfaz de línea de comandos (CLI).
+- Python 3.9: Lenguaje para la interfaz de línea de comandos (CLI).
 
-Psycopg2: Adaptador de base de datos para Python.
+- Psycopg2: Adaptador de base de datos para Python.
 
-Docker Compose: Orquestación de servicios (App + DB).
+- Docker Compose: Orquestación de servicios (App + DB).
 
 Git: Control de versiones.
+## 🔧 Solución de Problemas Comunes
+1. Error: puerto 5432 ocupado Si tienes PostgreSQL instalado localmente en tu máquina, Docker fallará.
+
+Solución: Detén tu servicio local de Postgres o cambia el puerto en docker-compose.yml (ej. "5433:5432").
+
+2. El menú se cierra inmediatamente Si al ejecutar docker attach no ves nada.
+
+Solución: Presiona la tecla ENTER una vez. Si el contenedor se detuvo, reinícialo con docker start techstore_menu.
+
+3. Error de conexión a Base de Datos Si la aplicación dice "Esperando a la base de datos..." por mucho tiempo.
+
+Solución: Asegúrate de que el contenedor de base de datos esté sano (healthy) ejecutando docker ps.
