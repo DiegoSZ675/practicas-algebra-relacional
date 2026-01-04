@@ -89,4 +89,18 @@ Pasos para ejecutar
 git clone <URL_DE_TU_REPOSITORIO>
 cd proyecto-algebra-relacional
 2. Construir y levantar los contenedores: Este comando descarga la imagen de Postgres, construye la aplicación Python e inicializa la base de datos automáticamente.
-    
+3. Ingresar al Menú Interactivo: Una vez que los contenedores estén corriendo, ejecuta:
+docker attach techstore_menu
+(Nota: Si el menú no aparece de inmediato, presiona ENTER una vez).
+
+4. Detener el sistema: Para apagar los contenedores y liberar recursos:
+```
+##🧠 Consultas Implementadas
+```text
+El sistema incluye 20 consultas clasificadas por complejidad. A continuación se detallan los tipos de operaciones cubiertas:
+Categoría,Operadores / Conceptos,Descripción y Ejemplo
+1. Operadores Básicos,"σ,π,∪,−,∩","Consultas de selección, proyección y conjuntos.  Ej: Listar productos de una marca o unión de catálogos."
+2. Reuniones (Joins),"⋈,\leftouterjoin,▹, Self-Join","Conexión de múltiples tablas.  Incluye: Natural Join, Left Outer Join y Anti-Join."
+3. Agregación,"SUM, AVG, GROUP BY","Cálculo de estadísticas y reportes.  Ej: Promedio de precios por marca, ventas por cliente."
+4. División (Desafío),÷ (Simulado),"Operaciones de totalidad.  Ej: ""Clientes que compraron TODOS los productos de X""."
+5. Lógica Predicados,"∀,∃",Consultas basadas en cuantificadores universales y existenciales.
