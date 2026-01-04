@@ -90,7 +90,7 @@ Pasos para ejecutar
     cd proyecto-algebra-relacional
 
 2. Construir y levantar los contenedores: Este comando descarga la imagen de Postgres, construye la aplicación Python e inicializa la base de datos automáticamente.
-   docker-compose up -d --build
+       docker-compose up -d --build
 
 3. Ingresar al Menú Interactivo: Una vez que los contenedores estén corriendo, ejecuta:
    docker attach techstore_menu
