@@ -5,8 +5,8 @@ Este proyecto implementa un sistema de base de datos para una tienda de electró
 El sistema está completamente dockerizado e incluye un menú interactivo en Python para ejecutar y visualizar 20 consultas complejas.
 
 **Integrantes del Equipo:**
-* [Tu Nombre Completo Aquí]
-* [Nombre de tu compañero (si aplica)]
+* Rodriguez Salcedo Liam Ariel
+* Sánchez Zenteno Diego Alejandro
 
 ---
 
